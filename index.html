@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wpac-flex-cards">
+        <div class="options">
+            <div class="option active" style="--optionBackground:url(img/card-1.jpg)">
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                     <i class="fas fa-walking"></i>
+                  </div>
+                  <div class="info">
+                     <div class="main">Card Title</div>
+                     <div class="sub">Some description for the card.</div>
+                  </div>
+               </div>
+            </div>
+            <div class="option" style="--optionBackground:url(img/card-2.jpg);">
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                     <i class="fas fa-snowflake"></i>
+                  </div>
+                  <div class="info">
+                    <div class="main">Card Title</div>
+                    <div class="sub">Some description for the card.</div>
+                  </div>
+               </div>
+            </div>
+            <div class="option" style="--optionBackground:url(img/card-3.jpg);">
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                     <i class="fas fa-tree"></i>
+                  </div>
+                  <div class="info">
+                    <div class="main">Card Title</div>
+                    <div class="sub">Some description for the card.</div>
+                  </div>
+               </div>
+            </div>
+            <div class="option" style="--optionBackground:url(img/card-4.jpg);">
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                     <i class="fas fa-tint"></i>
+                  </div>
+                  <div class="info">
+                    <div class="main">Card Title</div>
+                    <div class="sub">Some description for the card.</div>
+                  </div>
+               </div>
+            </div>
+            <div class="option" style="--optionBackground:url(img/card-5.jpg);">
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                     <i class="fas fa-sun"></i>
+                  </div>
+                  <div class="info">
+                    <div class="main">Card Title</div>
+                    <div class="sub">Some description for the card.</div>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".option").click(function(){
+            $(".option").removeClass("active");
+            $(this).addClass("active");
+        
+        });
+    </script>
+</body>
+</html>
